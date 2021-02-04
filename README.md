@@ -12,7 +12,6 @@ A collection of example serverless apps built with SST.
   
   Create a serverless REST API on AWS using Serverless Stack Toolkit (SST). We'll be using the `sst.Api` construct to define the routes of our API.
 
----
 
 ## Documentation
 
