@@ -1,6 +1,4 @@
-# SST Examples: How to create a REST API
-
----
+# [How to create a REST API](https://serverless-stack.com/examples/how-to-create-a-rest-api-with-serverless.html)
 
 Start by installing the dependencies.
 
