@@ -1,0 +1,4 @@
+# Ignore CDK outputs
+cdk.out
+# Ignore SST outputs
+.build
