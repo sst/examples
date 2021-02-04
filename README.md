@@ -12,6 +12,10 @@ A collection of example serverless apps built with SST.
   
   Create a serverless REST API on AWS using Serverless Stack Toolkit (SST). We'll be using the `sst.Api` construct to define the routes of our API.
 
+- [How to create a REST API in TypeScript with serverless](https://github.com/serverless-stack/examples/tree/main/rest-api-ts)
+  
+  Create a serverless REST API  on AWS with TypeScript using Serverless Stack Toolkit (SST). We'll be using the sst.Api construct to define the routes of our API.
+
 
 ## Documentation
 
