@@ -1,6 +1,12 @@
-# [How to create a REST API](https://serverless-stack.com/examples/how-to-create-a-rest-api-with-serverless.html)
+# How to create a REST API
 
-Start by installing the dependencies.
+An example serverless app created with SST.
+
+## Getting Started
+
+[**Read the tutorial**](https://serverless-stack.com/examples/how-to-create-a-rest-api-with-serverless.html)
+
+Install the dependencies.
 
 ```bash
 $ npm install
