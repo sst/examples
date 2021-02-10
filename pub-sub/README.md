@@ -1,4 +1,4 @@
-# How to use pub sub in your serverless app
+# How to use Pub/Sub in your serverless app
 
 An example serverless app created with SST.
 
