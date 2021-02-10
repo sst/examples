@@ -1,5 +1,4 @@
 import * as cdk from "@aws-cdk/core";
-import * as dynamodb from "@aws-cdk/aws-dynamodb";
 import * as sst from "@serverless-stack/resources";
 
 export default class MyStack extends sst.Stack {
@@ -9,8 +8,8 @@ export default class MyStack extends sst.Stack {
     // Create the table
     const table = new sst.Table(this, "Notes", {
       fields: {
-        userId: dynamodb.AttributeType.STRING,
-        noteId: dynamodb.AttributeType.STRING,
+        userId: sst.TableFieldType.STRING,
+        noteId: sst.TableFieldType.STRING,
       },
       primaryIndex: { partitionKey: "userId", sortKey: "noteId" },
     });
