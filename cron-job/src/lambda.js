@@ -1,4 +1,4 @@
-import https from "https";
+import fetch from "node-fetch";
 
 export async function main() {
   const weather = await checkSFWeather();
@@ -7,17 +7,7 @@ export async function main() {
 }
 
 function checkSFWeather() {
-  return new Promise((resolve, reject) =>
-    https
-      .get("https://www.metaweather.com/api/location/2487956/", (resp) => {
-        let data = "";
-
-        resp.on("data", (chunk) => {
-          data += chunk;
-        });
-
-        resp.on("end", () => resolve(JSON.parse(data)));
-      })
-      .on("error", (err) => reject(err))
-  );
+  return fetch(
+    "https://www.metaweather.com/api/location/2487956/"
+  ).then((res) => res.json());
 }
