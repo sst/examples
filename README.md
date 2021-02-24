@@ -44,6 +44,10 @@ A collection of example serverless apps built with SST.
 
   Add Twitter authentication to a serverless API using the `sst.Api` and `sst.Auth` constructs.
 
+- [How to add Auth0 authentication to a serverless API](https://github.com/serverless-stack/examples/tree/main/api-auth-auth0)
+
+  Add Auth0 authentication to a serverless API using the `sst.Api` and `sst.Auth` constructs.
+
 ### Async Tasks
 
 - [How to use cron jobs in your serverless app](https://github.com/serverless-stack/examples/tree/main/cron-job)
