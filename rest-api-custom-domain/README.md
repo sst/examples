@@ -1,10 +1,10 @@
-# How to create a REST API
+# How to add a custom domain to a serverless API
 
 An example serverless app created with SST.
 
 ## Getting Started
 
-[**Read the tutorial**](https://serverless-stack.com/examples/how-to-add-custom-domain-to-a-serverless-api.html)
+[**Read the tutorial**](https://serverless-stack.com/examples/how-to-add-a-custom-domain-to-a-serverless-api.html)
 
 Install the dependencies.
 

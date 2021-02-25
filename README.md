@@ -18,7 +18,7 @@ A collection of example serverless apps built with SST.
 
 - [How to add a custom domain to a serverless API](https://github.com/serverless-stack/examples/tree/main/rest-api-custom-domain)
 
-  Create a serverless REST API on AWS using the `sst.Api` construct to define the routes and custom domain of our API.
+  Add a custom domain to a serverless REST API on AWS using the `sst.Api` construct.
 
 ### Working with databases
 
