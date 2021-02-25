@@ -16,6 +16,10 @@ A collection of example serverless apps built with SST.
 
   Create a serverless REST API on AWS with TypeScript using the `sst.Api` construct to define the routes of our API.
 
+- [How to add a custom domain to a serverless API](https://github.com/serverless-stack/examples/tree/main/rest-api-custom-domain)
+
+  Add a custom domain to a serverless REST API on AWS using the `sst.Api` construct.
+
 ### Working with databases
 
 - [How to use DynamoDB in your serverless app](https://github.com/serverless-stack/examples/tree/main/rest-api-dynamodb)
