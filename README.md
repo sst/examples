@@ -52,6 +52,14 @@ A collection of example serverless apps built with SST.
 
   Add Auth0 authentication to a serverless API using the `sst.Api` and `sst.Auth` constructs.
 
+- [How to add JWT authorization to a serverless API using Cognito User Pool](https://github.com/serverless-stack/examples/tree/main/api-auth-jwt-cognito-user-pool)
+
+  Add JWT authorization to a serverless API with Cognito User Pool using the `sst.Api` constructs.
+
+- [How to add JWT authorization to a serverless API using Auth0](https://github.com/serverless-stack/examples/tree/main/api-auth-jwt-auth0)
+
+  Add JWT authorization to a serverless API with Auth0 using the `sst.Api` constructs.
+
 ### Async Tasks
 
 - [How to use cron jobs in your serverless app](https://github.com/serverless-stack/examples/tree/main/cron-job)
