@@ -1,21 +1,18 @@
 import * as cdk from "@aws-cdk/core";
-import * as iam from "@aws-cdk/aws-iam";
 import * as sst from "@serverless-stack/resources";
 
 export default class MyStack extends sst.Stack {
   constructor(scope, id, props) {
     super(scope, id, props);
 
-    const { account, region } = sst.Stack.of(this);
-
     // Create Api
     const api = new sst.Api(this, "Api", {
-      defaultAuthorizationType: "AWS_IAM",
+      defaultAuthorizationType: sst.ApiAuthorizationType.AWS_IAM,
       routes: {
         "GET /private": "src/private.main",
         "GET /public": {
-          authorizationType: "NONE",
           function: "src/public.main",
+          authorizationType: sst.ApiAuthorizationType.NONE,
         },
       },
     });
@@ -26,15 +23,7 @@ export default class MyStack extends sst.Stack {
     });
 
     // Allow authenticated users invoke API
-    auth.attachPermissionsForAuthUsers([
-      new iam.PolicyStatement({
-        actions: ["execute-api:Invoke"],
-        effect: iam.Effect.ALLOW,
-        resources: [
-          `arn:aws:execute-api:${region}:${account}:${api.httpApi.httpApiId}/*`,
-        ],
-      }),
-    ]);
+    auth.attachPermissionsForAuthUsers([api]);
 
     // Show API endpoint in output
     new cdk.CfnOutput(this, "ApiEndpoint", {
