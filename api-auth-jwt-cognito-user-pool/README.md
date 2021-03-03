@@ -1,10 +1,10 @@
-# How to add JWT authorization using Cognito User Pool to a serverless API
+# How to add JWT authorization with Cognito User Pool to a serverless API
 
 An example serverless app created with SST.
 
 ## Getting Started
 
-[**Read the tutorial**](https://serverless-stack.com/examples/how-to-add-jwt-authorization-to-a-serverless-api-using-cognito-user-pool.html)
+[**Read the tutorial**](https://serverless-stack.com/examples/how-to-add-jwt-authorization-with-cognito-user-pool-to-a-serverless-api.html)
 
 Install the dependencies.
 

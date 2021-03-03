@@ -1,10 +1,10 @@
-# How to add JWT authorization using Auth0 to a serverless API
+# How to add JWT authorization with Auth0 to a serverless API
 
 An example serverless app created with SST.
 
 ## Getting Started
 
-[**Read the tutorial**](https://serverless-stack.com/examples/how-to-add-jwt-authorization-to-a-serverless-api-using-auth0.html)
+[**Read the tutorial**](https://serverless-stack.com/examples/how-to-add-jwt-authorization-with-auth0-to-a-serverless-api.html)
 
 Install the dependencies.
 
