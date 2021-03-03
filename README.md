@@ -32,6 +32,8 @@ A collection of example serverless apps built with SST.
 
 ### Authentication
 
+#### Using AWS IAM
+
 - [How to add Cognito authentication to a serverless API](https://github.com/serverless-stack/examples/tree/main/api-auth-cognito)
 
   Add Cognito User Pool authentication to a serverless API using the `sst.Api` and `sst.Auth` constructs.
@@ -51,6 +53,16 @@ A collection of example serverless apps built with SST.
 - [How to add Auth0 authentication to a serverless API](https://github.com/serverless-stack/examples/tree/main/api-auth-auth0)
 
   Add Auth0 authentication to a serverless API using the `sst.Api` and `sst.Auth` constructs.
+
+#### Using JWT
+
+- [How to add JWT authorization with Cognito User Pool to a serverless API](https://github.com/serverless-stack/examples/tree/main/api-auth-jwt-cognito-user-pool)
+
+  Add JWT authorization with Cognito User Pool to a serverless API using the `sst.Api` constructs.
+
+- [How to add JWT authorization with Auth0 to a serverless API](https://github.com/serverless-stack/examples/tree/main/api-auth-jwt-auth0)
+
+  Add JWT authorization with Auth0 to a serverless API using the `sst.Api` constructs.
 
 ### Async Tasks
 
