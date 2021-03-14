@@ -1,4 +1,4 @@
-# How to add Auth0 authentication to a serverless API
+# How to use `chrome-aws-lambda` layer
 
 An example serverless app created with SST.
 
