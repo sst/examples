@@ -17,6 +17,7 @@
     "@aws-cdk/core": "1.91.0",
     "@serverless-stack/cli": "0.9.18",
     "@serverless-stack/resources": "0.9.18",
-    "apollo-server-lambda": "^2.21.1"
+    "apollo-server-lambda": "^2.21.1",
+    "graphql": "^15.5.0"
   }
 }
