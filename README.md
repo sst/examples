@@ -26,6 +26,10 @@ A collection of example serverless apps built with SST.
 
   Create a serverless Apollo GraphQL API on AWS using the `sst.ApolloApi` construct.
 
+- [How to create a serverless GraphQL API with AWS AppSync](https://github.com/serverless-stack/examples/tree/main/graphql-appsync)
+
+  Create a serverless AppSync GraphQL API on AWS using the `sst.AppSyncApi` construct.
+
 ### Working with databases
 
 - [How to use DynamoDB in your serverless app](https://github.com/serverless-stack/examples/tree/main/rest-api-dynamodb)

@@ -1,5 +1,5 @@
 {
-  "name": "graphql-apollo",
+  "name": "graphql-appsync",
   "stage": "dev",
   "region": "us-east-1",
   "lint": true

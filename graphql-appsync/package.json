@@ -1,5 +1,5 @@
 {
-  "name": "graphql-apollo",
+  "name": "graphql-appsync",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,8 +14,8 @@
     "@types/aws-lambda": "^8.10.70"
   },
   "dependencies": {
-    "@serverless-stack/cli": "0.10.4",
-    "@serverless-stack/resources": "0.10.4",
-    "apollo-server-lambda": "^2.21.1"
+    "@serverless-stack/cli": "0.10.5",
+    "@serverless-stack/resources": "0.10.5",
+    "aws-sdk": "^2.863.0"
   }
 }
