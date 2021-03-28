@@ -1,4 +1,4 @@
-# How to create an Apollo GraphQL API with serverless
+# How to create an Apollo GraphQL API
 
 An example serverless app created with SST.
 
