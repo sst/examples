@@ -20,6 +20,12 @@ A collection of example serverless apps built with SST.
 
   Add a custom domain to a serverless REST API on AWS using the `sst.Api` construct.
 
+### Using GrapQL
+
+- [How to create an Apollo GraphQL API with serverless](https://github.com/serverless-stack/examples/tree/main/graphql-apollo)
+
+  Create a serverless Apollo GraphQL API on AWS using the `sst.ApolloApi` construct.
+
 ### Working with databases
 
 - [How to use DynamoDB in your serverless app](https://github.com/serverless-stack/examples/tree/main/rest-api-dynamodb)

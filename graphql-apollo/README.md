@@ -1,8 +1,12 @@
-# How to use Apollo Server in your serverless app
+# How to create an Apollo GraphQL API with serverless
 
 An example serverless app created with SST.
 
-Start by installing the dependencies.
+## Getting Started
+
+[**Read the tutorial**](https://serverless-stack.com/examples/how-to-create-an-apollo-graphql-api-with-serverless.html)
+
+Install the dependencies.
 
 ```bash
 $ npm install

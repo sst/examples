@@ -16,7 +16,6 @@
   "dependencies": {
     "@serverless-stack/cli": "0.10.4",
     "@serverless-stack/resources": "0.10.4",
-    "apollo-server-lambda": "^2.21.1",
-    "graphql": "^15.5.0"
+    "apollo-server-lambda": "^2.21.1"
   }
 }
