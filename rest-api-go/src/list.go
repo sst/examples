@@ -8,9 +8,7 @@ import (
 )
 
 func Handler(request events.APIGatewayV2HTTPRequest) (events.APIGatewayProxyResponse, error) {
-	var notes = db.Notes()
-
-	response, _ := json.MarshalIndent(notes, "", "  ")
+	response, _ := json.MarshalIndent(db.Notes(), "", "  ")
 
 	return events.APIGatewayProxyResponse{
 		Body:       string(response),

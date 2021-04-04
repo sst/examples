@@ -1,10 +1,10 @@
-# How to create a REST API
+# How to create a REST API in Golang
 
 An example serverless app created with SST.
 
 ## Getting Started
 
-[**Read the tutorial**](https://serverless-stack.com/examples/how-to-create-a-rest-api-with-serverless.html)
+[**Read the tutorial**](https://serverless-stack.com/examples/how-to-create-a-rest-api-in-golang-with-serverless.html)
 
 Install the dependencies.
 

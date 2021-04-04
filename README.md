@@ -16,6 +16,10 @@ A collection of example serverless apps built with SST.
 
   Create a serverless REST API on AWS with TypeScript using the `sst.Api` construct to define the routes of our API.
 
+- [How to create a REST API in Golang with serverless](https://github.com/serverless-stack/examples/tree/main/rest-api-go)
+
+  Create a serverless REST API on AWS with Golang using the `sst.Api` construct to define the routes of our API.
+
 - [How to add a custom domain to a serverless API](https://github.com/serverless-stack/examples/tree/main/rest-api-custom-domain)
 
   Add a custom domain to a serverless REST API on AWS using the `sst.Api` construct.
@@ -95,3 +99,28 @@ Learn more about the SST.
 - [Docs](https://docs.serverless-stack.com/)
 - [@serverless-stack/cli](https://docs.serverless-stack.com/packages/cli)
 - [@serverless-stack/resources](https://docs.serverless-stack.com/packages/resources)
+
+## Contributing
+
+To add an example:
+
+  1. Checkout this repo 
+  2. Create a new directory at the root with the name of the example
+  3. Add the example code
+  4. Format the code by
+     
+     Running Prettier for JS at the root
+
+     ``` bash
+     $ npm run prettier
+     ```
+     
+     Running the following in a dir with Go files
+
+     ``` bash
+     $ go fmt
+     ```
+  5. Submit a PR!
+
+And [join us on Slack](https://launchpass.com/serverless-stack).
+
