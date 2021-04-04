@@ -1,17 +1,23 @@
 package main
 
 import (
-  "github.com/aws/aws-lambda-go/events"
-  "github.com/aws/aws-lambda-go/lambda"
+	"encoding/json"
+	"github.com/aws/aws-lambda-go/events"
+	"github.com/aws/aws-lambda-go/lambda"
+	"github.com/serverless-stack/examples/rest-api-go/db"
 )
 
-func Handler(request events.APIGatewayV2HTTPRequest)(events.APIGatewayProxyResponse, error) {
-  return events.APIGatewayProxyResponse {
-    Body: "This is the list API! Your request was received at " + request.RequestContext.Time + ".",
-    StatusCode: 200,
-  }, nil
+func Handler(request events.APIGatewayV2HTTPRequest) (events.APIGatewayProxyResponse, error) {
+	var notes = db.Notes()
+
+	response, _ := json.MarshalIndent(notes, "", "  ")
+
+	return events.APIGatewayProxyResponse{
+		Body:       string(response),
+		StatusCode: 200,
+	}, nil
 }
 
 func main() {
-  lambda.Start(Handler)
+	lambda.Start(Handler)
 }
