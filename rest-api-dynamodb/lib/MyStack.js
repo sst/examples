@@ -1,4 +1,3 @@
-import * as cdk from "@aws-cdk/core";
 import * as dynamodb from "@aws-cdk/aws-dynamodb";
 import * as sst from "@serverless-stack/resources";
 
@@ -30,9 +29,9 @@ export default class MyStack extends sst.Stack {
     // Allow the API to access the table
     api.attachPermissions([table]);
 
-    // Show API endpoint in output
-    new cdk.CfnOutput(this, "ApiEndpoint", {
-      value: api.httpApi.apiEndpoint,
+    // Show the API endpoint in the output
+    this.addOutputs({
+      ApiEndpoint: api.httpApi.apiEndpoint,
     });
   }
 }

@@ -1,4 +1,3 @@
-import * as cdk from "@aws-cdk/core";
 import * as sst from "@serverless-stack/resources";
 
 export default class MyStack extends sst.Stack {
@@ -29,18 +28,12 @@ export default class MyStack extends sst.Stack {
     // Allow authenticated users invoke API
     auth.attachPermissionsForAuthUsers([api]);
 
-    // Show API endpoint in output
-    new cdk.CfnOutput(this, "ApiEndpoint", {
-      value: api.httpApi.apiEndpoint,
-    });
-    new cdk.CfnOutput(this, "UserPoolId", {
-      value: auth.cognitoUserPool.userPoolId,
-    });
-    new cdk.CfnOutput(this, "UserPoolClientId", {
-      value: auth.cognitoUserPoolClient.userPoolClientId,
-    });
-    new cdk.CfnOutput(this, "IdentityPoolId", {
-      value: auth.cognitoCfnIdentityPool.ref,
+    // Show the API endpoint and other info in the output
+    this.addOutputs({
+      ApiEndpoint: api.httpApi.apiEndpoint,
+      UserPoolId: auth.cognitoUserPool.userPoolId,
+      IdentityPoolId: auth.cognitoCfnIdentityPool.ref,
+      UserPoolClientId: auth.cognitoUserPoolClient.userPoolClientId,
     });
   }
 }

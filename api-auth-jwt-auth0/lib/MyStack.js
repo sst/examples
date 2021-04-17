@@ -1,4 +1,3 @@
-import * as cdk from "@aws-cdk/core";
 import * as apigAuthorizers from "@aws-cdk/aws-apigatewayv2-authorizers";
 import * as sst from "@serverless-stack/resources";
 
@@ -22,9 +21,9 @@ export default class MyStack extends sst.Stack {
       },
     });
 
-    // Show API endpoint in output
-    new cdk.CfnOutput(this, "ApiEndpoint", {
-      value: api.httpApi.apiEndpoint,
+    // Show the API endpoint and other info in the output
+    this.addOutputs({
+      ApiEndpoint: api.httpApi.apiEndpoint,
     });
   }
 }

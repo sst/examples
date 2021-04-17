@@ -10,13 +10,12 @@
     "remove": "sst remove"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "1.79.0"
+    "@aws-cdk/assert": "1.98.0"
   },
   "dependencies": {
-    "@aws-cdk/aws-dynamodb": "1.79.0",
-    "@aws-cdk/core": "1.79.0",
-    "@serverless-stack/cli": "0.8.0",
-    "@serverless-stack/resources": "0.8.0",
+    "@aws-cdk/core": "1.98.0",
+    "@serverless-stack/cli": "0.11.0",
+    "@serverless-stack/resources": "0.11.0",
     "aws-sdk": "^2.839.0",
     "uuid": "^3.3.2"
   }
