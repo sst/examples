@@ -11,12 +11,12 @@ export default class MyStack extends sst.Stack {
         jwtAudience: ["r7MQkwTZjIzcKhGmlcy9QhMNXnT9qhwX"],
         jwtIssuer: "https://sst-test.us.auth0.com/",
       }),
-      defaultAuthorizationType: "JWT",
+      defaultAuthorizationType: sst.ApiAuthorizationType.JWT,
       routes: {
         "GET /private": "src/private.main",
         "GET /public": {
-          authorizationType: "NONE",
           function: "src/public.main",
+          authorizationType: sst.ApiAuthorizationType.NONE,
         },
       },
     });
