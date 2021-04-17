@@ -1,4 +1,3 @@
-import * as cdk from "@aws-cdk/core";
 import * as s3 from "@aws-cdk/aws-s3";
 import * as lambda from "@aws-cdk/aws-lambda";
 import * as sst from "@serverless-stack/resources";
@@ -40,14 +39,10 @@ export default class MyStack extends sst.Stack {
     });
     api.attachPermissions([bucket]);
 
-    // Show S3 bucket in output
-    new cdk.CfnOutput(this, "BucketName", {
-      value: bucket.bucketName,
-    });
-
-    // Show API endpoint in output
-    new cdk.CfnOutput(this, "ApiEndpoint", {
-      value: api.httpApi.apiEndpoint,
+    // Show the API endpoint and other info in the output
+    this.addOutputs({
+      ApiEndpoint: api.httpApi.apiEndpoint,
+      BucketName: bucket.bucketName,
     });
   }
 }

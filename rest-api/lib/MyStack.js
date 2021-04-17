@@ -13,9 +13,9 @@ export default class MyStack extends sst.Stack {
       },
     });
 
-    // Show the API endpoint in output
+    // Show the API endpoint in the output
     this.addOutputs({
-      value: api.httpApi.apiEndpoint,
+      ApiEndpoint: api.httpApi.apiEndpoint,
     });
   }
 }

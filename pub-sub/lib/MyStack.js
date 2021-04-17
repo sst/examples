@@ -1,4 +1,3 @@
-import * as cdk from "@aws-cdk/core";
 import * as sst from "@serverless-stack/resources";
 
 export default class MyStack extends sst.Stack {
@@ -26,9 +25,9 @@ export default class MyStack extends sst.Stack {
     // Allow the API to publish the topic
     api.attachPermissions([topic]);
 
-    // Show API endpoint in output
-    new cdk.CfnOutput(this, "ApiEndpoint", {
-      value: api.httpApi.apiEndpoint,
+    // Show the API endpoint in the output
+    this.addOutputs({
+      ApiEndpoint: api.httpApi.apiEndpoint,
     });
   }
 }
