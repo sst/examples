@@ -20,8 +20,10 @@ export default class MyStack extends sst.Stack {
     const auth = new sst.Auth(this, "Auth", {
       // Create a Cognito User Pool to manage user's authentication info.
       cognito: {
-        // Users will login using their email and password
-        signInAliases: { email: true },
+        userPool: {
+          // Users will login using their email and password
+          signInAliases: { email: true },
+        },
       },
     });
 
@@ -30,7 +32,7 @@ export default class MyStack extends sst.Stack {
 
     // Show the API endpoint and other info in the output
     this.addOutputs({
-      ApiEndpoint: api.httpApi.apiEndpoint,
+      ApiEndpoint: api.url,
       UserPoolId: auth.cognitoUserPool.userPoolId,
       IdentityPoolId: auth.cognitoCfnIdentityPool.ref,
       UserPoolClientId: auth.cognitoUserPoolClient.userPoolClientId,
