@@ -4,7 +4,7 @@ An example serverless app created with SST.
 
 ## Getting Started
 
-Read the docs on [**Debugging with VS Code**](https://docs.serverless-stack.com/debugging-with-vscode).
+[**Read the tutorial**](https://serverless-stack.com/examples/how-to-debug-lambda-functions-with-visual-studio-code.html)
 
 Install the dependencies.
 
