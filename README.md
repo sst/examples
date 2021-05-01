@@ -92,6 +92,12 @@ A collection of example serverless apps built with SST.
 
   Create a pub/sub system in your serverless app using the `sst.Api` and `sst.Topic` constructs.
 
+### Miscellaneous
+
+- [How to debug Lambda functions with Visual Studio Code](https://github.com/serverless-stack/examples/blob/main/vscode)
+
+  A walkthrough on how to use SST to debug Lambda functions live with VS Code.
+
 ## Documentation
 
 Learn more about the SST.
