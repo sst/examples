@@ -5,23 +5,24 @@ export default class MyStack extends sst.Stack {
     super(scope, id, props);
 
     // Create the table
-    const table = new sst.Table(this, "Counter", {
+    const table = new sst.Table(this, "Connections", {
       fields: {
-        counter: sst.TableFieldType.STRING,
+        id: sst.TableFieldType.STRING,
       },
-      primaryIndex: { partitionKey: "counter" },
+      primaryIndex: { partitionKey: "id" },
     });
 
-    // Create the HTTP API
-    const api = new sst.Api(this, "Api", {
+    // Create the WebSocket API
+    const api = new sst.WebSocketApi(this, "Api", {
       defaultFunctionProps: {
-        // Pass in the table name to our API
         environment: {
           tableName: table.dynamodbTable.tableName,
         },
       },
       routes: {
-        "POST /": "src/lambda.main",
+        $connect: "src/connect.main",
+        $disconnect: "src/disconnect.main",
+        sendmessage: "src/sendMessage.main",
       },
     });
 

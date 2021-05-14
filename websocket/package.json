@@ -1,5 +1,5 @@
 {
-  "name": "rest-api-dynamodb",
+  "name": "websocket",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,8 +14,8 @@
   },
   "dependencies": {
     "@aws-cdk/core": "1.98.0",
-    "@serverless-stack/cli": "0.13.0",
-    "@serverless-stack/resources": "0.13.0",
-    "aws-sdk": "^2.838.0"
+    "@serverless-stack/cli": "0.18.0",
+    "@serverless-stack/resources": "0.18.0",
+    "aws-sdk": "^2.906.0"
   }
 }
