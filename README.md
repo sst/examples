@@ -96,6 +96,10 @@ A collection of example serverless apps built with SST.
 
   Create a pub/sub system in your serverless app using the `sst.Api` and `sst.Topic` constructs.
 
+- [How to automatically resize images with serverless](https://github.com/serverless-stack/examples/tree/main/bucket-resize-image)
+
+  Automatically resize images that are uploaded to an S3 bucket. Uses the `sst.Bucket` construct.
+
 ### Miscellaneous
 
 - [How to debug Lambda functions with Visual Studio Code](https://github.com/serverless-stack/examples/blob/main/vscode)
