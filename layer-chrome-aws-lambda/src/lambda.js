@@ -1,34 +1,32 @@
-import S3Client from "aws-sdk/clients/s3";
-import chromium from "chrome-aws-lambda";
+import chrome from "chrome-aws-lambda";
 
-const s3 = new S3Client();
+// chrome-aws-lambda handles loading locally vs from the Layer
+const puppeteer = chrome.puppeteer;
 
-exports.main = async (event) => {
-  // Get url from query string
-  const url = event.queryStringParameters.url;
+export async function handler(event) {
+  // Get the url and dimensions from the query string
+  const { url, width, height } = event.queryStringParameters;
 
-  // Launch a headless browser
-  const browser = await chromium.puppeteer.launch({
-    args: chromium.args,
-    executablePath: await chromium.executablePath,
+  const browser = await puppeteer.launch({
+    args: chrome.args,
+    executablePath: await chrome.executablePath,
   });
 
-  // Take a screenshot
   const page = await browser.newPage();
+
+  await page.setViewport({
+    width: Number(width),
+    height: Number(height),
+  });
+
+  // Navigate to the url
   await page.goto(url);
-  const buffer = await page.screenshot();
 
-  // Upload screenshot to S3
-  const result = await s3
-    .upload({
-      Bucket: process.env.BUCKET_NAME,
-      Key: `${Date.now()}.png`,
-      Body: buffer,
-      ContentType: "image/png",
-      ACL: "public-read",
-    })
-    .promise();
-
-  // Return uploaded image url
-  return { url: result.Location };
-};
+  return {
+    statusCode: 200,
+    // Return as binary data
+    isBase64Encoded: true,
+    headers: { "Content-Type": "image/png" },
+    body: await page.screenshot({ encoding: "base64" }),
+  };
+}
