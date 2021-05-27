@@ -106,6 +106,10 @@ A collection of example serverless apps built with SST.
 
   A walkthrough on how to use SST to debug Lambda functions live with VS Code.
 
+- [How to use Lambda Layers in your serverless app](https://github.com/serverless-stack/examples/blob/main/layer-chrome-aws-lambda)
+
+  Use Layers in your serverless app to take screenshots of webpages. Uses the `sst.Api` construct.
+
 ## Documentation
 
 Learn more about the SST.

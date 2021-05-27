@@ -1,10 +1,10 @@
-# How to use `chrome-aws-lambda` layer
+# How to use Lambda Layers in your serverless app
 
 An example serverless app created with SST.
 
 ## Getting Started
 
-[**Read the tutorial**](https://serverless-stack.com/examples/how-to-add-auth0-authentication-to-a-serverless-api.html)
+[**Read the tutorial**](https://serverless-stack.com/examples/how-to-use-lambda-layers-in-your-serverless-app.html)
 
 Install the dependencies.
 
