@@ -48,6 +48,10 @@ A collection of example serverless apps built with SST.
 
   Create a CRUD API with serverless using DynamoDB. With the `sst.Api` and `sst.Table` constructs.
 
+- [How to use MongoDB in your serverless app](https://github.com/serverless-stack/examples/tree/main/rest-api-mongodb)
+
+  Use MongoDB in your serverless app and create a simple API with `sst.Api` to query a list of movies.
+
 ### Authentication
 
 #### Using AWS IAM
