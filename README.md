@@ -44,13 +44,17 @@ A collection of example serverless apps built with SST.
 
   Use DynamoDB in your serverless app on AWS using the `sst.Api` and `sst.Table` to create a simple hit counter.
 
-- [How to create a CRUD API with serverless using DynamoDB](https://github.com/serverless-stack/examples/tree/main/crud-api-dynamodb)
-
-  Create a CRUD API with serverless using DynamoDB. With the `sst.Api` and `sst.Table` constructs.
-
 - [How to use MongoDB in your serverless app](https://github.com/serverless-stack/examples/tree/main/rest-api-mongodb)
 
   Use MongoDB in your serverless app and create a simple API with `sst.Api` to query a list of movies.
+
+- [How to use PostgreSQL in your serverless app](https://github.com/serverless-stack/examples/tree/main/rest-api-postgresql)
+
+  Use PostgreSQL in your serverless app on AWS using `sst.Api` and Amazon Aurora Serverless to create a simple hit counter.
+
+- [How to create a CRUD API with serverless using DynamoDB](https://github.com/serverless-stack/examples/tree/main/crud-api-dynamodb)
+
+  Create a CRUD API with serverless using DynamoDB. With the `sst.Api` and `sst.Table` constructs.
 
 ### Authentication
 
