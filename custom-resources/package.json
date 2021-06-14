@@ -1,0 +1,21 @@
+{
+  "name": "custom-resources",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "sst test",
+    "start": "sst start",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "remove": "sst remove"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.98.0"
+  },
+  "dependencies": {
+    "@aws-cdk/core": "1.98.0",
+    "@aws-cdk/custom-resources": "1.98.0",
+    "@serverless-stack/cli": "0.12.0",
+    "@serverless-stack/resources": "0.12.0"
+  }
+}
